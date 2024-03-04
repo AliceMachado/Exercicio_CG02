@@ -17,13 +17,13 @@ public class Atividade03 {
         System.out.println("Insira a velocidade da segunda particula em m/s");
         double velocidade2 = scanner.nextDouble();
 
-        double V_FA = (massa1 * velocidade1 + massa2 * velocidade2) / (massa1 + massa2);
-        double V_FB = (massa2 * velocidade2 + massa1 * velocidade1) / (massa1 + massa2);
+        double velocidadeFinal1 = (massa1 * velocidade1 + massa2 * velocidade2) / (massa1 + massa2);
+        double velocidadeFinal2 = (massa2 * velocidade2 + massa1 * velocidade1) / (massa1 + massa2);
         
         // Imprimindo as velocidades finais
-        System.out.printf("Velocidade final da partícula 1: %.2f m/s", V_FA);
+        System.out.printf("Velocidade final da partícula 1: %.2f m/s", velocidadeFinal1);
         System.out.println("");
-        System.out.printf("Velocidade final da partícula 2: %.2f m/s", V_FB);
+        System.out.printf("Velocidade final da partícula 2: %.2f m/s", velocidadeFinal2);
         
         scanner.close();
     }
